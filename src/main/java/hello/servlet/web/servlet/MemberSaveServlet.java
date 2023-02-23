@@ -21,9 +21,7 @@ public class MemberSaveServlet extends HttpServlet {
         String username = request.getParameter("username");
         int age = Integer.parseInt(request.getParameter("age"));
 
-        Member member = new Member();
-        member.setAge(age);
-        member.setUsername(username);
+        Member member = new Member(username,age);
         memberRepository.save(member);
 
         response.setContentType("text/html");
