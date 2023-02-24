@@ -4,19 +4,19 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class ModelView {
-    private String viewName;
+    private String viewName; //URI에서 맨 끝이름만 ex)new-form
     private Map<String, Object> model = new HashMap<>();
 
     public ModelView(String viewName) {
-        this.viewName = viewName;
+        this.viewName = viewName; //URI에서 맨 끝이름만 ex)new-form
     }
 
     public String getViewName() {
-        return viewName;
+        return viewName; //URI에서 맨 끝이름만 ex)new-form
     }
 
     public void setViewName(String viewName) {
-        this.viewName = viewName;
+        this.viewName = viewName; //URI에서 맨 끝이름만 ex)new-form
     }
 
     public Map<String, Object> getModel() {
